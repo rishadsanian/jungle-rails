@@ -6,7 +6,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
-3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
+3. Create `config/` by copying `config/secrets.example.yml`
 4. Run `bin/rails db:reset` to create, load and seed db
 5. Create .env file based on .env.example
 6. Sign up for a Stripe account
