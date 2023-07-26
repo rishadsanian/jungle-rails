@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'about/index'
   root to: 'products#index'
 
-  resources :products, only: [:index, :show]
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
@@ -13,11 +11,13 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: [:create, :show]
-  
+
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
   end
+
+  get '/about', to: 'about#index', as: :about
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
