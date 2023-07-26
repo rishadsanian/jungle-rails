@@ -54,6 +54,15 @@ main section.categories-show {
           background: white;
           color: rgba(0, 130, 29, 0.7);
         }
+
+        .soldout{
+          
+            transition: all 150ms linear;
+            border: 1px solid rgba(0, 130, 29, 0.7);
+            background-color: white;
+            color:rgba(224, 14, 14, 0.8);
+        }
+        
       }
       img {
         width: 100%;
