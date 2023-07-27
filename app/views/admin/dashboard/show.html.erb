@@ -1,24 +1,25 @@
-<header class ="page-header">
-<h1>Admin Dashboard</h1>
-<br>
-<div class="row">
-  <div class="col-md-6 mb-3">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Product Count</h4>
-        <p class="card-text"><%= @product_count %></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6 mb-3">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Category Count</h4>
-        <p class="card-text"><%= @category_count %></p>
-      </div>
-    </div>
-  </div>
+<header class="page-header">
+  <h1>Admin Dashboard</h1>
   <br>
-  <%= button_to "View Products", admin_products_path , method: :get, class: "btn btn-success" %>
-</div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Product Count</h4>
+          <p class="card-text"><%= @product_count %></p>
+          <%= button_to "View Products", admin_products_path, method: :get, class: "btn btn-success mt-3" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Category Count</h4>
+          <p class="card-text"><%= @category_count %></p>
+          <%= button_to "View Categories", admin_categories_path, method: :get, class: "btn btn-success mt-3" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
