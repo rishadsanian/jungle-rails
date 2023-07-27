@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
   get 'users/new'
   get 'users/create'
   root to: 'products#index'
@@ -24,6 +27,11 @@ Rails.application.routes.draw do
 
   # about page
   get '/about', to: 'about#index', as: :about
+
+  # user authentication to manage sessions by login and logout
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
   # user authentication sign up and create new user
   get '/signup' => 'users#new'
