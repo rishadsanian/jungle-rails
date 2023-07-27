@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+  get 'users/create'
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
@@ -23,11 +25,10 @@ Rails.application.routes.draw do
   # about page
   get '/about', to: 'about#index', as: :about
 
-# user authentication sign up and create new user
+  # user authentication sign up and create new user
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
-end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
