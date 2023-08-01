@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-describe("Jungle Product Details page", () => {
+describe("Jungle Product Details page from homepage", () => {
   beforeEach(() => {
     cy.visit("/");
   });
