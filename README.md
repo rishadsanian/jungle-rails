@@ -6,8 +6,6 @@ A mini e-commerce application project setup to simulate real world on the job ex
 
 ### Functional Requirements
 
-This section lists the functional specs that our mentors will be sampling when evaluating your project submission.
-
 #### Feature: Sold Out Badge
 - Major: When a product has 0 quantity, a sold out badge should be displayed on the product list page
 - Minor: Should ideally be implemented as a question/boolean method in view helper and/or Product model
@@ -15,6 +13,7 @@ This section lists the functional specs that our mentors will be sampling when e
 #### Feature: Admin Categories
 - Major: Admin users can list and create new categories
 - Major: Admins can add new products using the new category
+- Major: Implement new Dashboard category so that Admins can view products and category summary
 - Major: Restful routes (resources) should be used, and there should be no extra, unused routes exposed
 - Bonus: All admin controllers inherit from Admin::BaseController (or similarly named) abstract controller, containing the authentication filter
 
@@ -38,6 +37,13 @@ This section lists the functional specs that our mentors will be sampling when e
 
 #### Bug: Checking Out with Empty Cart
 - Major: When the cart is empty and the user goes to the carts#show page, instead of displaying the contents and a stripe checkout button, display a friendly message about how it is empty and link to the home page
+
+#### Feature: About Page
+- Major: Implemented an About Page with Nav-bar links.
+
+#### Bug: Money Formatting
+
+- Format money values with a $ sign where missing
 
 
 ## Setup
