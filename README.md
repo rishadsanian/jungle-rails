@@ -42,8 +42,7 @@ A mini e-commerce application project setup to simulate real world on the job ex
 - Major: Implemented an About Page with Nav-bar links.
 
 #### Bug: Money Formatting
-
-- Format money values with a $ sign where missing
+- Format money values with a $ sign where missing.
 
 
 ## Setup
