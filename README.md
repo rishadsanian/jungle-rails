@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application project setup to simulate real world on the job experience. This is an app built with Ruby on Rails and has used RSpec and Cypress for Testing.
+A mini e-commerce application project setup to simulate real world on the job experience. This is an app built with Ruby on Rails and has uses RSpec and Cypress for Testing.
 
 ## Implemented Project Requirements
 
