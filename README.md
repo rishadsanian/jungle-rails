@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application project setup to simulate real world on the job experience.  
+A mini e-commerce application project setup to simulate real world on the job experience. This is an app built with Ruby on Rails and has used RSpec and Cypress for Testing.
 
 ## Implemented Project Requirements
 
@@ -44,6 +44,24 @@ A mini e-commerce application project setup to simulate real world on the job ex
 #### Bug: Money Formatting
 - Format money values with a $ sign where missing.
 
+### Tests and Sepecs Implementation - RSpec and Cypress
+
+#### Model Spec - Product
+- Tests implemented for testing validations in Product Model
+
+#### Model Spec - User
+- Setup testing validations for User Model
+- Adjusted code to ensure minimum password length
+- Adjusted code to eliminate edge cases during user login and account registration
+
+### Feature Spec - HomePage
+ - Ensure display of expected contents in Homepage
+
+### Feature Spec - Product Details
+- Ensure proper navigation from the homepage to the correct product details page ensuring modularity in testing.
+
+### Feature Spec - Add to Cart
+- Ensure users can click the 'Add to Cart' button for a product on the home page and in doing so their cart increases by one.
 
 ## Setup
 
